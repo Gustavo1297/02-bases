@@ -1,15 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './pages/main-page.component';
+import { ListComponent } from './components/list/list.component';
+import { AddComponentComponent } from './components/add-component/add-component.component';
+
 
 
 
 @NgModule({
   declarations: [
-    MainPageComponent
+    MainPageComponent,
+    ListComponent,
+    AddComponentComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     MainPageComponent
