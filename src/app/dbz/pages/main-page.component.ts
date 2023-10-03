@@ -13,10 +13,13 @@ export class MainPageComponent {
     { name: 'Yamcha', power: 1450 }];
 
     onNewCharacter(character:Character):void{
+      this.characters.push(character);
       console.log('MainPage');
       console.log(character);
+    }
 
-
+    onDeleteCharacter(index:number):void{
+      this.characters.splice(index,1);
     }
 
 }

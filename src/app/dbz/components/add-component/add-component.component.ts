@@ -14,7 +14,9 @@ export class AddComponentComponent {
     power:0
   }
 
+  @Output() itemDelete = new EventEmitter<number>();
   emitCharacter():void{
+    debugger;
     console.log(this.character);
     if (this.character.name.length ==0) return;
     this.onNewCharacter.emit(this.character);
